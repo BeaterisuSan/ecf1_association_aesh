@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(228, 169, 95);
+    grid-template-rows: repeat (5, 0,5fr);
+    padding: 5%;
+    scroll-padding: 2em;
+    row-gap: 3px;
+    grid-gap: 20px;
+    gap: 30px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    }
+
+    header {
+        grid-area: header;
+        padding-block-end: 5%;
+        background-image: url(https://www.icone-gif.com/gif/ecole/eleves-et-profs/ecole_etudiant03.gif);
+        background-repeat: no-repeat;
+        background-position: right; 
+    }
+
+    nav {
+        grid-area: nav;
+        align-items: center;
+        border-bottom: 1px solid;
+    }
+
+    main {
+        grid-area: main; 
+        padding: 2%;    
+        }
+
+    aside {
+        grid-area: aside;
+        padding: 5%;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: white;   
+        border-top: 1px solid;
+    }
