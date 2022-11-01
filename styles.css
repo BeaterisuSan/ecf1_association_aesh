@@ -5,7 +5,7 @@ html, body {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: rgb(243, 234, 224);
+    background-color: rgb(246, 243, 240);
     grid-template-rows: repeat (5, 0,5fr);
     padding: 5%;
     scroll-padding: 2em;
